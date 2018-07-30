@@ -11,7 +11,6 @@ Hotkey Alt-1 to Alt-8 to read the following fields in a mail or RSS-message:
 - trible press: copies content of that field to the clipboard (except of Alt-8 for Attachments)
 Upcoming:
 - adjust hotkeys for use in Outlook calendar
-
 Files can be found at:
 https://github.com/Novalis7747/sonos
 Latest release direct download:
