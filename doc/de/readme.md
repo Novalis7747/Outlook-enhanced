@@ -13,8 +13,8 @@ Was ist noch geplant?
 - Abfragen der relevanten Felder im Kalender
 
 Alle Dateien können hier gefunden werden:
-https://github.com/Novalis7747/sonos
+https://github.com/Novalis7747/Outlook-enhanced
 Letztes release direkt download:
-https://github.com/Novalis7747/sonos/raw/master/sonos-1.1.nvda-addon
+https://github.com/Novalis7747/Outlook-enhanced/raw/master/outlook-0.9.nvda-addon
 
 * Wichtige Anmerkung: Für Fragen oder Anregungen, sowie einer speziellen Braille-Ausgabe bitte kontaktiert mich unter Novalis7747@live.com

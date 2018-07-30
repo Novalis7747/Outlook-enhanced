@@ -12,8 +12,8 @@ Hotkey Alt-1 to Alt-8 to read the following fields in a mail or RSS-message:
 Upcoming:
 - adjust hotkeys for use in Outlook calendar
 Files can be found at:
-https://github.com/Novalis7747/sonos
+https://github.com/Novalis7747/Outlook-enhanced
 Latest release direct download:
-https://github.com/Novalis7747/sonos/raw/master/sonos-1.1.nvda-addon
+https://github.com/Novalis7747/Outlook-enhanced/raw/master/outlook-0.9.nvda-addon
 
 * Important note: contact me for any suggestions and comments under novalis7747@live.com
