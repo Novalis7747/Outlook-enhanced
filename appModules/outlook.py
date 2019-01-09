@@ -16,7 +16,7 @@ import tones
 import scriptHandler
 
 """
-appModule for Microsoft Outlook, Version 0.9
+appModule for Microsoft Outlook, Version 0.9.1
 Written by Ralf Kefferpuetz, 2018
 Tested under Outlook 2016 (32bit Office suits) -this addOn my work in older versions of Outlook, like Outlook 2013 but it is only supported in Outlook 2016 32bit
 Features:
@@ -25,6 +25,7 @@ Hotkey Alt-1 to Alt-8 to read the following fields in a mail or RSS-message:
 -Single press: speaks the field content
 - double press: moves focus to the field
 - trible press: copies content of that field to the clipboard (except of Alt-8 for Attachments)
+- Alt-0 brings you back to the message area
 Upcoming:
 -your suggestion please
 """
@@ -284,6 +285,19 @@ class AppModule(outlook.AppModule):
 			tones.beep(440, 20)
 	# Translators: Documentation for Attachments script.
 	script_attachments.__doc__=_("speaks the number and name of the Attachments, double press moves the focus to the Attachments.")
+	
+	def script_message(self, gesture):
+		fg = api.getForegroundObject()
+		try:
+			handle = windowUtils.findDescendantWindow(fg.windowHandle, className="AfxWndA", controlID=4159)
+			if handle:
+				# found handle
+				winUser.setForegroundWindow(handle)
+		except LookupError:
+			tones.beep(440, 20)
+	# Translators: Documentation for message script.
+	script_message.__doc__=_("moves focus to the message area.")
+
 
 	__gestures={
 		"kb:alt+1":"from",
@@ -293,5 +307,6 @@ class AppModule(outlook.AppModule):
 	"kb:alt+5":"bcc",
 		"kb:alt+6":"subject",
 		"kb:alt+8":"attachments",
+		"kb:alt+0":"message",
 		"kb:alt+7":"infobar"
 	}
